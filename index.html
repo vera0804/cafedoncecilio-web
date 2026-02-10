@@ -40,10 +40,18 @@
   <!-- HERO -->
   <main id="inicio" class="hero" role="main" aria-label="Portada">
     <div class="heroMedia" aria-hidden="true">
-      <!-- VIDEO (recomendado mp4) -->
-      <video class="heroVideo" id="heroVideo" autoplay muted playsinline loop preload="metadata">
+      <!-- VIDEO -->
+      <video
+        id="heroVideo"
+        class="heroVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="assets/plantascafe.jpg"
+      >
         <source src="assets/video1vertical.mp4" type="video/mp4" />
-        <!-- Si querés fallback: <source src="assets/video1vertical.webm" type="video/webm" /> -->
       </video>
 
       <!-- Capas de fotos para transiciones -->
@@ -89,12 +97,9 @@
       <div class="splitText">
         <div class="sectionTitle">
           <h2 data-i18n="about_title">Quiénes somos</h2>
-          <p data-i18n="about_text">
-            Café Don Cecilio es un proyecto familiar de café de especialidad ubicado en la Zona Norte de Costa Rica,
-            a 1200 metros sobre el nivel del mar. Nuestra finca está en las faldas de la reserva hídrica del
-            Parque Nacional Juan Castro Blanco, reflejando nuestro compromiso con la excelencia, la sostenibilidad
-            y el respeto por el origen.
-          </p>
+
+          <!-- Lo dejamos vacío: lo llena app.js con el texto literal (incluye <br><br>) -->
+          <p data-i18n="about_text"></p>
         </div>
 
         <div class="features">
@@ -124,9 +129,7 @@
     <div class="wrap">
       <div class="sectionTitle center">
         <h2 data-i18n="var_title">Variedades</h2>
-        <p data-i18n="var_text">
-          Trabajamos con variedades cuidadosamente seleccionadas para lograr perfiles únicos.
-        </p>
+        <p data-i18n="var_text">Trabajamos con variedades cuidadosamente seleccionadas para lograr perfiles únicos.</p>
       </div>
 
       <div class="chips" aria-label="Lista de variedades">
@@ -160,12 +163,9 @@
     <div class="wrap">
       <div class="sectionTitle center">
         <h2 data-i18n="bags_title">Bolsas por variedad</h2>
-        <p data-i18n="bags_text">
-          Las bolsas cambian según la variedad. Te mostramos algunas presentaciones.
-        </p>
+        <p data-i18n="bags_text">Las bolsas cambian según la variedad. Te mostramos algunas presentaciones.</p>
       </div>
 
-      <!-- Reemplazá las imágenes por las bolsas reales -->
       <div class="bagGrid">
         <article class="bagCard">
           <div class="bagImg">
@@ -267,4 +267,5 @@
   </script>
 </body>
 </html>
+
 
