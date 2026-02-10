@@ -60,6 +60,12 @@ const I18N = {
     contact_note_p: "De momento no hay tienda en línea. Coordinamos pedidos por correo o redes.",
 
     footer_tag: "Zona Norte, Costa Rica • Café de especialidad",
+
+    nav_gallery: "Galería",
+gallery_title: "Galería",
+gallery_text: "Momentos de finca, proceso y taza.",
+gallery_hint: "Deslizá horizontalmente para ver más.",
+
   },
 
   en: {
@@ -113,6 +119,12 @@ bags_text: "Explore our different presentations.",
     contact_note_p: "No online store yet. Orders are coordinated via email or social media.",
 
     footer_tag: "Northern Costa Rica • Specialty coffee",
+
+    nav_gallery: "Gallery",
+gallery_title: "Gallery",
+gallery_text: "Moments from farm, process, and cup.",
+gallery_hint: "Swipe horizontally to see more.",
+
   },
 };
 

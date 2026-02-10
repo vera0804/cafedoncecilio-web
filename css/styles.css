@@ -510,3 +510,51 @@ h3{
   .heroVideo, .heroSlide{ transition: none; }
 }
 
+/* =========================
+   Gallery carousel (cards)
+   ========================= */
+.galleryRow{
+  margin-top: 22px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 220px;     /* tamaño de “tarjeta” */
+  gap: 14px;
+
+  overflow-x: auto;
+  padding: 6px 2px 14px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.galleryRow::-webkit-scrollbar{
+  height: 10px;
+}
+.galleryRow::-webkit-scrollbar-thumb{
+  background: rgba(16,17,18,.18);
+  border-radius: 999px;
+}
+.galleryRow::-webkit-scrollbar-track{
+  background: rgba(16,17,18,.06);
+  border-radius: 999px;
+}
+
+.galleryCard{
+  scroll-snap-align: start;
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
+}
+
+.galleryCard img{
+  width: 100%;
+  height: 220px;               /* alto de tarjeta */
+  object-fit: cover;
+  display: block;
+}
+
+.galleryHint{
+  margin-top: 10px;
+  text-align: center;
+}

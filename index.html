@@ -25,6 +25,7 @@
       <nav class="links" aria-label="Navegación principal">
         <a href="#quienes" data-i18n="nav_about">Quiénes somos</a>
         <a href="#variedades" data-i18n="nav_varieties">Variedades</a>
+        <a href="#galeria" data-i18n="nav_gallery">Galería</a>
         <a href="#bolsas" data-i18n="nav_bags">Bolsas</a>
         <a href="#contacto" class="pill" data-i18n="nav_contact">Contacto</a>
       </nav>
@@ -158,21 +159,43 @@
     </div>
   </section>
 
-  <!-- GALERÍA (editorial) -->
-<section class="section">
+  <!-- GALERÍA (carrusel) -->
+<section id="galeria" class="section">
   <div class="wrap">
     <div class="sectionTitle center">
-      <h2>Galería</h2>
-      <p class="muted">Momentos de finca, proceso y taza.</p>
+      <h2 data-i18n="gallery_title">Galería</h2>
+      <p class="muted" data-i18n="gallery_text">Momentos de finca, proceso y taza.</p>
     </div>
 
-    <div class="gallery">
-      <img src="assets/plantascafé.jpeg" alt="Plantas de café" loading="lazy" decoding="async" />
-      <img src="assets/granocafemaduro.jpeg" alt="Grano maduro" loading="lazy" decoding="async" />
-      <img src="assets/cafeenmanos.jpeg" alt="Café en manos" loading="lazy" decoding="async" />
-      <img src="assets/camassecadovertical.jpeg" alt="Camas de secado" loading="lazy" decoding="async" />
-      <img src="assets/cafepelado.jpeg" alt="Café en proceso" loading="lazy" decoding="async" />
+    <div class="galleryRow" aria-label="Galería de fotos">
+      <article class="galleryCard">
+        <img src="assets/plantascafé.jpeg" alt="Plantas de café" loading="lazy" decoding="async" />
+      </article>
+
+      <article class="galleryCard">
+        <img src="assets/granocafemaduro.jpeg" alt="Grano maduro" loading="lazy" decoding="async" />
+      </article>
+
+      <article class="galleryCard">
+        <img src="assets/cafeenmanos.jpeg" alt="Café en manos" loading="lazy" decoding="async" />
+      </article>
+
+      <article class="galleryCard">
+        <img src="assets/cafepeladoenmanos.jpeg" alt="Proceso de café" loading="lazy" decoding="async" />
+      </article>
+
+      <article class="galleryCard">
+        <img src="assets/camassecadovertical.jpeg" alt="Camas de secado" loading="lazy" decoding="async" />
+      </article>
+
+      <article class="galleryCard">
+        <img src="assets/cafepelado.jpeg" alt="Café en proceso" loading="lazy" decoding="async" />
+      </article>
     </div>
+
+    <p class="galleryHint muted small" data-i18n="gallery_hint">
+      Deslizá horizontalmente para ver más.
+    </p>
   </div>
 </section>
 
@@ -274,6 +297,7 @@
       <div class="footerLinks">
         <a href="#quienes" data-i18n="nav_about">Quiénes somos</a>
         <a href="#variedades" data-i18n="nav_varieties">Variedades</a>
+        <a href="#galeria" data-i18n="nav_gallery">Galería</a>
         <a href="#bolsas" data-i18n="nav_bags">Bolsas</a>
         <a href="mailto:info@cafedoncecilio.com">info@cafedoncecilio.com</a>
       </div>
