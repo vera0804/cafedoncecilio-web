@@ -5,7 +5,7 @@ const I18N = {
   es: {
     nav_about: "Quiénes somos",
     nav_varieties: "Variedades",
-    nav_bags: "Bolsas",
+    nav_bags: "Presentaciones",
     nav_contact: "Contacto",
 
     hero_eyebrow: "Café de especialidad • 1200 msnm • Zona Norte",
@@ -49,8 +49,8 @@ const I18N = {
     var_c3_t: "Disponibilidad",
     var_c3_p: "Consultá por cosecha, proceso y presentaciones activas.",
 
-    bags_title: "Bolsas por variedad",
-    bags_text: "Las bolsas cambian según la variedad. Te mostramos algunas presentaciones.",
+    bags_title: "Presentaciones",
+    bags_text: "Conocé nuestras diferentes presentaciones.",
     bags_hint: "Imagen de referencia • reemplazar por bolsa real",
 
     contact_title: "Contacto",
@@ -65,7 +65,7 @@ const I18N = {
   en: {
     nav_about: "About",
     nav_varieties: "Varieties",
-    nav_bags: "Bags",
+    nav_bags: "Presentations",
     nav_contact: "Contact",
 
     hero_eyebrow: "Specialty coffee • 1200 m a.s.l. • Northern Region",
@@ -102,8 +102,8 @@ const I18N = {
     var_c3_t: "Availability",
     var_c3_p: "Ask about harvest, process, and current offerings.",
 
-    bags_title: "Bags by variety",
-    bags_text: "Packaging changes by variety. Here are a few examples.",
+    bags_title: "Presentations",
+bags_text: "Explore our different presentations.",
     bags_hint: "Reference image • replace with real bag photo",
 
     contact_title: "Contact",
