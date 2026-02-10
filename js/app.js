@@ -89,9 +89,14 @@ gallery_hint: "Deslizá horizontalmente para ver más.",
 
     about_title: "About us",
     about_text:
-      "Café Don Cecilio is a family specialty-coffee project in Northern Costa Rica, at 1200 meters above sea level. " +
-      "Our farm sits on the slopes of the Juan Castro Blanco National Park water reserve, reflecting our commitment " +
-      "to excellence, sustainability, and respect for origin.",
+    "Café Don Cecilio is a family specialty-coffee project located in Northern Costa Rica, " +
+    "at 1200 meters above sea level. Since 2022, we have been cultivating high-quality specialty coffees in a " +
+    "privileged environment where altitude, climate, and soil shape exceptional cup profiles." +
+    "<br><br>" +
+    "We are the only specialty-quality coffee producers in the northern region of the country, working with " +
+    "carefully selected varieties such as Marsellesa, Obata, Catiguá, Paraneima, IAC-125, and Geisha. " +
+    "Our farm is located on the slopes of the Juan Castro Blanco National Park water reserve, reflecting our " +
+    "commitment to excellence, sustainability, and respect for origin.",
     about_f1_t: "Altitude & microclimate",
     about_f1_p: "Ideal conditions for clean and complex cup profiles.",
     about_f2_t: "Process care",
