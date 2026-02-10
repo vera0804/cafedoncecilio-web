@@ -211,3 +211,33 @@ else el.textContent = value;
   window.addEventListener("scroll", onScroll, { passive: true });
 })();
 
+(() => {
+  const v = document.getElementById("heroVideo");
+  if (!v) return;
+
+  const tryPlay = async () => {
+    try {
+      v.muted = true;          // clave para autoplay
+      v.playsInline = true;
+      await v.play();
+    } catch (e) {
+      // Si el navegador bloquea autoplay, intentamos al primer toque
+      const resume = async () => {
+        try { await v.play(); } catch {}
+        window.removeEventListener("touchstart", resume);
+        window.removeEventListener("click", resume);
+      };
+      window.addEventListener("touchstart", resume, { passive: true });
+      window.addEventListener("click", resume, { passive: true });
+    }
+  };
+
+  // intenta apenas carga
+  document.addEventListener("DOMContentLoaded", tryPlay);
+  // y también cuando vuelve a la pestaña
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) tryPlay();
+  });
+})();
+
+
