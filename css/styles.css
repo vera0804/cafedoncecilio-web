@@ -592,3 +592,53 @@ h3{
 .brandText{
   font-weight: 700; /* probá 700 o 800 */
 }
+
+/* Lightbox */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: none;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0,0,0,.75);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox.isOpen{ display: grid; }
+
+.lightboxImg{
+  max-width: min(1000px, 92vw);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 24px 80px rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.lightboxClose{
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.10);
+  color: rgba(255,255,255,.92);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.lightboxClose:hover{
+  background: rgba(255,255,255,.16);
+  border-color: rgba(255,255,255,.28);
+}
+
+/* Que se note que se puede clickear */
+.galleryCard img{
+  cursor: zoom-in;
+}
+
