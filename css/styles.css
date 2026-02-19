@@ -589,3 +589,6 @@ h3{
   .heroSlide{ display: none !important; }
 }
 
+.brandText{
+  font-weight: 700; /* probá 700 o 800 */
+}
