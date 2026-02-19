@@ -54,6 +54,23 @@ h3{
   letter-spacing: .2px;
 }
 
+/* Brand text más grande */
+.brandText{
+  font-size: 22px;      /* probá 20–26px según gusto */
+  line-height: 1.05;
+}
+
+/* En pantallas grandes, todavía más grande */
+@media (min-width: 980px){
+  .brandText{ font-size: 26px; }
+}
+
+/* En pantallas pequeñas, un poquito más controlado */
+@media (max-width: 420px){
+  .brandText{ font-size: 20px; }
+}
+
+
 /* =========================
    Topbar (integrado al Hero)
    ========================= */
