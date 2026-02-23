@@ -642,3 +642,10 @@ h3{
   cursor: zoom-in;
 }
 
+.bagImg img{
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: #fff;
+}
+
