@@ -170,7 +170,7 @@ else el.textContent = value;
 
 /* =========================
    Hero transitions: video + fotos
-   ========================= */
+   ========================= 
 (function heroTransitions() {
   const prefersReduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReduce) return;
@@ -204,7 +204,7 @@ else el.textContent = value;
     slideIndex = (slideIndex + 1) % slides.length;
     activateSlide(slideIndex);
   }, intervalMs);
-})();
+})();*/
 
 (() => {
   const header = document.querySelector(".topbar");
@@ -245,18 +245,21 @@ else el.textContent = value;
   });
 })();
 
-// Lightbox para la galería
-(() => {
+// Lightbox para la galería (espera a que exista el DOM)
+document.addEventListener("DOMContentLoaded", () => {
   const lb = document.getElementById("lightbox");
   const lbImg = document.getElementById("lightboxImg");
   const lbClose = document.getElementById("lightboxClose");
+
+  // Si aún no existen (porque el script se carga antes), salimos sin romper todo
+  if (!lb || !lbImg || !lbClose) return;
 
   function openLightbox(src, alt) {
     lbImg.src = src;
     lbImg.alt = alt || "Imagen ampliada";
     lb.classList.add("isOpen");
     lb.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden"; // evita scroll
+    document.body.style.overflow = "hidden";
   }
 
   function closeLightbox() {
@@ -268,13 +271,13 @@ else el.textContent = value;
 
   // Click en cualquier imagen de la galería
   document.querySelectorAll(".galleryRow img").forEach((img) => {
-    img.addEventListener("click", () => openLightbox(img.src, img.alt));
+    img.addEventListener("click", () => openLightbox(img.currentSrc || img.src, img.alt));
   });
 
   // Cerrar con botón
   lbClose.addEventListener("click", closeLightbox);
 
-  // Cerrar al clickear el fondo (no la imagen)
+  // Cerrar al clickear el fondo
   lb.addEventListener("click", (e) => {
     if (e.target === lb) closeLightbox();
   });
@@ -283,7 +286,7 @@ else el.textContent = value;
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && lb.classList.contains("isOpen")) closeLightbox();
   });
-})();
+});
 
 
 
